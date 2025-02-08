@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Quick Notes</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Page for creating and saving notes -->
+    <div id="notes-view">
+      <h1 id="heading">Quick Notes</h1>
+      <input type="text" id="note-heading" placeholder="Note Heading">
+      <textarea id="note-content" rows="10" cols="40" placeholder="Write your note here..."></textarea>
+      <button id="save">Save Note</button>
+      <button id="view-saved">Saved Notes</button>
+      <div id="message" style="display: none;"></div>
+    </div>
+
+    <!-- Page for showing saved notes -->
+    <div id="saved-notes-view">
+      <h1>Saved Notes</h1>
+      <ul id="notes-list"></ul>
+      <button id="back">Back</button>
+    </div>
+    <div id="note-details"></div>
+    <div id="deleted-msg"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

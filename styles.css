@@ -1,0 +1,111 @@
+*{
+  margin:none;
+  padding:none;
+  box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+    width: 300px;
+
+  }
+  #notes-view{
+    display :grid;
+    grid-template-columns: auto auto;
+    row-gap:3px;
+    column-gap:2px;
+    padding: 10px;
+  }
+  #heading, #note-heading ,#note-content,#message{
+    grid-column: 1 / 3;
+  }
+  #message{
+    text-align: center;
+  }
+  
+  #notes-view>h1, #saved-notes-view>h1{
+    font-family:Georgia, 'Times New Roman', Times, serif 
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 400px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+    resize: none;
+    padding: 5px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #136bc9;
+  }
+  
+  #notes-list {
+    list-style-type: none;
+    padding: 2px;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 2px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #notes-list li {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 10px;
+    width: 100%; /* Adjust width based on the number of items you want per row */
+    height: 200px;
+  }
+  
+  #notes-list li button {
+    margin-top: 5px;
+    margin-right: 5px;
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  #saved-notes-view{
+    display :none;
+    max-height: 300px; /* Adjust the height as needed */
+    overflow-y: auto;
+    margin-bottom: 5px;
+    
+  }
+
+  li{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    padding: 0px;
+
+  }
+  .saved-note-heading ,.saved-note-content, .saved-note-time{
+    margin:2px,0;
+    grid-column: 1 / 3;
+  }
+  

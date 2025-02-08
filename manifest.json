@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Quick Notes",
+    "version": "1.0",
+    "description": "An extension to save and view notes.",
+    "permissions": ["storage"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ]
+}
